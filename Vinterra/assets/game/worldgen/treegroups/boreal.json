@@ -1,0 +1,76 @@
+{
+  "code": "boreal",
+  "trees": [
+    {
+      "code": "silverbirch",
+      "weight": 10,
+      "sizeMultiplier": 1,
+      "minFertility": 100
+    },
+    {
+      "code": "riverbirch",
+      "weight": 50,
+      "sizeMultiplier": 1,
+      "minFertility": 100,
+      "nearRivers": true
+    },
+    {
+      "code": "himalayanbirch",
+      "weight": 10,
+      "sizeMultiplier": 2,
+      "minFertility": 100
+    },
+    {
+      "code": "scotspine",
+      "weight": 100,
+      "sizeMultiplier": 1,
+      "minFertility": 100
+    },
+    {
+      "code": "larch",
+      "weight": 10,
+      "sizeMultiplier": 1,
+      "minFertility": 100
+    },
+    {
+      "code": "deepforestlarch",
+      "weight": 10,
+      "sizeMultiplier": 1,
+      "minFertility": 100
+    },
+    {
+      "code": "bristleconepine",
+      "weight": 10,
+      "sizeMultiplier": 1,
+      "maxFertility": 50,
+      "chance": 0.1
+    },
+    {
+      "code": "mountainpine",
+      "weight": 100,
+      "sizeMultiplier": 2,
+      "minFertility": 100
+    },
+    {
+      "code": "redwoodpine",
+      "weight": 1,
+      "sizeMultiplier": 1,
+      "minFertility": 100
+    },
+    {
+      "code": "fir",
+      "weight": 200,
+      "sizeMultiplier": 1,
+      "minFertility": 100
+    },
+    {
+      "code": "baldcypress",
+      "weight": 20,
+      "sizeMultiplier": 1,
+      "minFertility": 100
+    }
+  ],
+  "shrubs": [
+
+  ]
+}

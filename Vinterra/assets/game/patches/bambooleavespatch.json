@@ -1,0 +1,10 @@
+[
+  {
+    "comment": "Changes bamboo to use the same tint as pine seasonalOlive seasonalNeedles",
+    "op": "add",
+    "path": "/seasonColorMap",
+    "value": "seasonalOlive",
+    "file": "blocktypes/plant/leaves/bamboo.json",
+    "side": "Universal"
+  }
+]

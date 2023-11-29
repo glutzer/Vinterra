@@ -1,0 +1,63 @@
+[
+  {
+    "comment": "small patches of papyrus",
+    "blockCodes": [ "tallplant-papyrus-land-normal-free" ],
+    "quantity": {
+      "avg": 5,
+      "var": 5
+    },
+    "chance": 1,
+    "placement": "NearWater",
+    "nearRivers": true,
+    "riverDistance": 20,
+    "tags": [ "riverPapyrus" ]
+  },
+  {
+    "comment": "large patches of papyrus",
+    "blockCodes": [ "tallplant-papyrus-land-normal-free" ],
+    "quantity": {
+      "avg": 25,
+      "var": 15
+    },
+    "chance": 1,
+    "placement": "NearWater",
+    "nearRivers": true,
+    "riverDistance": 20,
+    "tags": [ "riverPapyrus" ]
+  },
+  {
+    "comment": "large patches of papyrus on land",
+    "blockCodes": [ "tallplant-papyrus-land-normal-free" ],
+    "quantity": {
+      "avg": 25,
+      "var": 15
+    },
+    "chance": 1,
+    "nearRivers": true,
+    "riverDistance": 10,
+    "tags": [ "riverPapyrus" ]
+  },
+  {
+    "comment": "small tight patches of water lily",
+    "blockCodes": [ "waterlily" ],
+    "quantity": {
+      "avg": 5,
+      "var": 2
+    },
+    "nearRivers": true,
+    "chance": 4,
+    "tags": [ "riverPapyrus" ]
+  },
+  {
+    "comment": "common Large patches of ferns in warm and wet forests",
+    "blockCodes": [ "tallfern" ],
+    "quantity": {
+      "avg": 25,
+      "var": 20
+    },
+    "chance": 3,
+    "riverDistance": 10,
+    "nearRivers": true,
+    "tags": [ "riverPapyrus" ]
+  }
+]

@@ -1,0 +1,99 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Users\Rajeesh\AppData\Roaming\Vintagestory\Lib\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="cairo-sharp">
+      <HintPath>..\..\Users\Rajeesh\AppData\Roaming\Vintagestory\Lib\cairo-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Users\Rajeesh\AppData\Roaming\Vintagestory\Lib\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\Users\Rajeesh\AppData\Roaming\Vintagestory\Lib\protobuf-net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SkiaSharp">
+      <HintPath>..\..\Users\Rajeesh\AppData\Roaming\Vintagestory\Lib\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="VintagestoryLib">
+      <HintPath>..\..\Users\Rajeesh\AppData\Roaming\Vintagestory\VintagestoryLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSCreativeMod">
+      <HintPath>..\..\Users\Rajeesh\AppData\Roaming\Vintagestory\Mods\VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSEssentials">
+      <HintPath>..\..\Users\Rajeesh\AppData\Roaming\Vintagestory\Mods\VSEssentials.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSSurvivalMod">
+      <HintPath>..\..\Users\Rajeesh\AppData\Roaming\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+<ItemGroup>
+  <Content Include="assets\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+  <None Remove="assets\game\blocktypes\saltcrust.json" />
+  <None Remove="assets\game\blocktypes\sulfuricacid.json" />
+  <None Remove="assets\game\config\vinterra\biomes\canyon.json" />
+  <None Remove="assets\game\entities\sandworm.json" />
+  <None Remove="assets\game\entities\sandwormsegment.json" />
+  <None Remove="assets\game\itemtypes\liquid\sulfuricacidportion.json" />
+  <None Remove="assets\game\patches\bambooleavespatch.json" />
+  <None Remove="assets\game\patches\colormapspatch.json" />
+  <None Remove="assets\game\patches\gravelfix.json" />
+  <None Remove="assets\game\shaderincludes\colormap.vsh" />
+  <None Remove="assets\game\shaders\chunkliquid.fsh" />
+  <None Remove="assets\game\shapes\sandwormhead.json" />
+  <None Remove="assets\game\shapes\sandwormsegment.json" />
+  <None Remove="assets\game\textures\block\liquid\sulfuricacid.png" />
+  <None Remove="assets\game\textures\block\liquid\sulfuricacid2.png" />
+  <None Remove="assets\game\textures\block\saltcrust\1.png" />
+  <None Remove="assets\game\textures\block\saltcrust\10.png" />
+  <None Remove="assets\game\textures\block\saltcrust\11.png" />
+  <None Remove="assets\game\textures\block\saltcrust\12.png" />
+  <None Remove="assets\game\textures\block\saltcrust\13.png" />
+  <None Remove="assets\game\textures\block\saltcrust\14.png" />
+  <None Remove="assets\game\textures\block\saltcrust\15.png" />
+  <None Remove="assets\game\textures\block\saltcrust\16.png" />
+  <None Remove="assets\game\textures\block\saltcrust\2.png" />
+  <None Remove="assets\game\textures\block\saltcrust\3.png" />
+  <None Remove="assets\game\textures\block\saltcrust\4.png" />
+  <None Remove="assets\game\textures\block\saltcrust\5.png" />
+  <None Remove="assets\game\textures\block\saltcrust\6.png" />
+  <None Remove="assets\game\textures\block\saltcrust\7.png" />
+  <None Remove="assets\game\textures\block\saltcrust\8.png" />
+  <None Remove="assets\game\textures\block\saltcrust\9.png" />
+  <None Remove="assets\game\textures\bluefintuna.png" />
+  <None Remove="assets\game\textures\environment\watertint.png" />
+  <None Remove="assets\game\worldgen\blockpatches\riverpapyrus.json" />
+  <None Remove="assets\game\worldgen\treegroups\boreal.json" />
+  <Content Include="modinfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Folder Include="assets\game\textures\environment\seasons\" />
+</ItemGroup>
+
+</Project>

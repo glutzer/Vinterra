@@ -1,0 +1,10 @@
+[
+  {
+    "comment": "Grass is 14, replace with needles (pine) tint, or birch which has brown part",
+    "op": "replace",
+    "path": "/14/texture",
+    "value": { "base": "environment/seasons/grasstint" },
+    "file": "config/colormaps.json",
+    "side": "Universal"
+  }
+]

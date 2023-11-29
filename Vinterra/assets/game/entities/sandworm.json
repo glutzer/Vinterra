@@ -1,0 +1,87 @@
+﻿{
+  "code": "sandworm",
+  "class": "SandwormHead",
+  "hitboxSize": {
+    "x": 0,
+    "y": 0
+  },
+  "deadCollisionBoxSize": {
+    "x": 2,
+    "y": 2
+  },
+  "selectionBoxSize": {
+    "x": 8,
+    "y": 8
+  },
+  "deadSelectionBoxSize": {
+    "x": 4,
+    "y": 4
+  },
+  "client": {
+    "size": 18,
+    "pitchStep": false,
+    "renderer": "Shape",
+    "shape": { "base": "entity/sandwormhead" },
+    "behaviors": [
+      { "code": "interpolateposition" },
+      { "code": "repulseagents" },
+      {
+        "code": "harvestable"
+      }
+    ]
+  },
+  "server": {
+    "behaviors": [
+      {
+        "code": "despawn",
+        "minSeconds": 5,
+        "minPlayerDistance": 1000
+      },
+      { "code": "repulseagents" },
+      {
+        "code": "health",
+        "currenthealthByType": {
+          "*": 200
+        },
+        "maxhealthByType": {
+          "*": 200
+        }
+      },
+      {
+        "code": "floatupwhenstuck",
+        "onlyWhenDead": true
+      },
+      {
+        "code": "deaddecay",
+        "hoursToDecay": 12
+      },
+      {
+        "code": "harvestable",
+        "dropsByType": {
+          "*": [
+            {
+              "type": "item",
+              "code": "game:gear-temporal",
+              "quantity": {
+                "avg": 12,
+                "var": 0
+              }
+            },
+            {
+              "type": "item",
+              "code": "game:fat",
+              "quantity": {
+                "avg": 64,
+                "var": 0
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "sounds": {
+    "hurt": "game:creature/locust/hurt",
+    "death": "game:creature/locust/death"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "code": "saltcrust",
+  "creativeinventory": {
+    "general": [ "*" ],
+    "terrain": [ "*" ]
+  },
+  "shape": {
+    "base": "block/basic/cube"
+  },
+  "blockmaterial": "sand",
+  "textures": {
+    "all": {
+      "base": "block/saltcrust/1",
+      "tiles": [
+        { "base": "block/saltcrust/*" }
+      ],
+      "tilesWidth": 4
+    }
+  },
+  "drawtype": "cube",
+  "replaceable": 600,
+  "fertility": 0,
+  "resistance": 1.5,
+  "sounds": {
+    "place": "block/gravel",
+    "break": "block/gravel",
+    "hit": "block/gravel",
+    "walk": "walk/gravel"
+  },
+  "heldTpIdleAnimation": "holdbothhandslarge",
+  "heldTpUseAnimation": "twohandplaceblock",
+  "tpHandTransform": {
+    "translation": {
+      "x": -1.23,
+      "y": -0.91,
+      "z": -0.8
+    },
+    "rotation": {
+      "x": -2,
+      "y": 25,
+      "z": -78
+    },
+    "scale": 0.4
+  },
+  "drops": [
+    {
+      "type": "block",
+      "code": "saltcrust",
+      "quantity": {
+        "avg": 1,
+        "var": 0
+      }
+    }
+  ]
+}

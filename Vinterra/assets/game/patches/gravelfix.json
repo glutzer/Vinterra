@@ -1,0 +1,10 @@
+[
+  {
+    "comment": "Alluvial deposits generate on anything, turn this off and make own generators",
+    "op": "replace",
+    "path": "/0/triesPerChunk",
+    "value": 0,
+    "file": "worldgen/deposits/soil/gravel.json",
+    "side": "Server"
+  }
+]

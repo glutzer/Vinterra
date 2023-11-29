@@ -1,0 +1,41 @@
+﻿{
+  "code": "sandwormsegment",
+  "class": "SandwormSegment",
+  "hitboxSize": {
+    "x": 0,
+    "y": 0
+  },
+  "selectionBoxSize": {
+    "x": 8,
+    "y": 8
+  },
+  "client": {
+    "size": 15,
+    "pitchStep": false,
+    "renderer": "Shape",
+    "shape": { "base": "entity/sandwormsegment" },
+    "behaviors": [
+      { "code": "interpolateposition" },
+      { "code": "repulseagents" },
+      {
+        "code": "health",
+        "currenthealthByType": {
+          "*": 200
+        },
+        "maxhealthByType": {
+          "*": 200
+        }
+      }
+    ]
+  },
+  "server": {
+    "behaviors": [
+      {
+        "code": "despawn",
+        "minSeconds": 5,
+        "minPlayerDistance": 1000
+      },
+      { "code": "repulseagents" }
+    ]
+  }
+}
